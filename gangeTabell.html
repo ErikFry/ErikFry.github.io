@@ -60,7 +60,9 @@
         } else {
           streak = 0;
           resultatEl.innerHTML = "Det var desverre feil, prøv igjen!"
-          resultatDivEl.style.backgroundColor = "red";
+          resultatDivEl.style.backgroundColor = "#ccddff";
+          svarEl.focus();
+          svarEl.select();
         }
       }
       spill();
