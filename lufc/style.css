@@ -51,7 +51,9 @@ input {
     font-size: 35px;
     margin: 20px;
 }
-
+.center{
+  text-align: center;
+}
 
 .grid-container {
   display: grid;
@@ -59,12 +61,11 @@ input {
   background-color: #2196F3;
   padding: 10px;
 }
-.header1{
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.8);
+.header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-size: 30px;
-  grid-column-start: 2;
-  grid-column-end: 3;
   padding: 20px;
 }
 
