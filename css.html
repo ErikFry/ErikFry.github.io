@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>CSS</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="grid-container">
+    <div class="item4">
+
+      <h1> Nettside for IT2 - Kirkeparken </h1>
+
+    </div>
+    <div class="item4">
+      <button><a href="index.html">Hjem</a></button>
+      <button><a href="w3shools.com">W3Schools</a></button>
+      <button>Hjem</button>
+      <button>Hjem</button>
+    </div>
+
+    <div class="item4">
+      <h1>CSS - hvordan funker det?</h1>
+
+    </div>
+  </div>
+  <div class="grid-container">
+    <div class="item4">
+      <p>
+        CSS som står for Cascading Style Sheets er det som gjør at du kan
+        kontrollere farger, fonter, størelser, mellomrom, generelt utseende på
+        innholdet som lager i HTML. <br><br> Det finnes 3 lag av CSS, altså 3
+        forskjellige måter vi kan implementere css på:
+      </p>
+    </div>
+    <div class="item1">
+      <p>1. Inline (direkte i html elementet)</p>
+      <img src="bilder/css/inlinecss.PNG" alt="">
+      <p>Resultat:</p>
+      <img src="bilder/css/inlineResultat.PNG" alt="">
+    </div>
+    <div class="item1">
+      <p>
+        2. Internal (direkte i html dokumentet lagt inn i head eller body ved
+        hjelp av "style" taggene)
+      </p>
+      <img src="bilder/css/internalCSS.PNG" alt="">
+      <p>
+        Her lager vi en CSS tag for h1 som vil endre alle h1 taggene til det
+        utseende så her vil alle h1 overskriftene bli blå.
+      </p>
+    </div>
+
+    <div class="item1">
+      <p>3. Eksternal (ekstern .css fil som lenkes i head)</p>
+      <img src="bilder/css/externalCSS.PNG" alt="">
+      <p>
+        Dette vil være hvor det meste av css koden vil ligge, det er greit med
+        noe intern og inline css men ting som brukes på flere sider og en del av
+        en større nettside bør ligge i .css filen slik at man slipper å skrive
+        det samme i hvert HTML dokument.
+      </p>
+    </div>
+
+
+    <div class="item1">
+      <h1>Hvordan lage css filer?</h1>
+      <p>
+        Når vi skal opprette en css fil må vi først velge et navn, dette kan
+        være hva man vil, men om man ikke vet hva det skal hete så bruker man
+        ofte style.css som navn man kan også legge den i en mappe om man ønsker
+        det, men det er ikke nødvendig med små prosjekter så du kan fint legge
+        den sammen med html dokumentene dine.
+      </p>
+    </div>
+    <div class="item1">
+      <h1>Linjer i grid</h1>
+      
+    </div>
+    <div class="item1">
+      <p><b>item1</b> trenger egentlig ikke noe definisjon av
+        størelse da den tar "standaren" som er 1x1 "rute"</p>
+      <img src="bilder/item1.PNG" alt="">
+    </div>
+    <div class="item1">
+      <p><b>item2</b> sier at den starter på 1
+        (som er helt til venstre) og skal så avslutte på 3 som er rett før siste
+        "rute"</p><img src="bilder/item2.PNG" alt="">
+    </div>
+    <div class="item1">
+      <p><b>item3</b> sier at du skal starte på 2 som er etter
+        første "rute" og skal avslutte etter 4 som er etter 3 "rute"</p>
+      <img src="bilder/item3.PNG" alt="">
+    </div>
+    <div class="item1">
+      <p><b>item4</b> sier at den skal starte på 1 og avslutte
+        på 4, dvs at den skal spanne hele raden</p><img src="bilder/item4.PNG" alt="">
+    </div>
+    <div class="item1">
+      <p><b>item5</b> skal gå over flere rader, for å gjøre
+        dette, må man legge på og definere eksakt hvor den skal plasseres. Her sier
+        jeg at den skal starte på før siste kolonne og avslutte etter denne.
+        Jeg sier også at den skal starte på første rad og avslutte etter 2 rad ved å
+        bruke linje nummer 3 (som ligger under 2 rad). Derfor spanner den over 2 rader.
+      </p><img src="bilder/item5.PNG" alt="">
+    </div>
+    <div class="item1">
+      <h1>Mellomrom</h1>
+      <p>Du kan ha mellomrom mellom rutene dine </p>
+      <img src="bilder/gridMellomrom2.PNG" alt="">
+      <p>grid-column-cap og grid-row-gap sier litt seg selv, men grid-gap er
+        begge deler satt sammen der column gap kommer først</p>
+    </div>
+    <div class="item1">
+      <img src="bilder/gridMellomrom.PNG" alt="">
+    </div>
+  </div>
+
+</body>
+
+</html>

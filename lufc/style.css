@@ -104,7 +104,7 @@ h3{
   border-top: 1px solid rgba(0, 0, 0, 0.8);
 }
 .item1 {
-  background-color:rgba(256,256,256,0.6);
+  background-color:rgba(256,256,256,0.7);
 
   padding: 20px;
   font-size: 30px;
@@ -112,7 +112,7 @@ h3{
 }
 
 .item2 {
-  background-color:rgba(256,256,256,0.6);
+  background-color:rgba(256,256,256,0.7);
 
   font-size: 30px;
   padding: 20px;
@@ -123,7 +123,7 @@ h3{
 }
 
 .meny {
-  background-color:rgba(256,256,256,0.6);
+  background-color:rgba(256,256,256,0.7);
   position: -webkit-sticky;
   position: sticky;
   top: 0;
@@ -134,7 +134,7 @@ h3{
   grid-column-end: 4;
 }
 .item4 {
-  background-color:rgba(256,256,256,0.6);
+  background-color:rgba(256,256,256,0.7);
 
   font-size: 30px;
   padding: 20px;
