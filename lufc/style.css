@@ -166,9 +166,11 @@ h3{
   grid-column-end: 4;
 }
 
+position: -webkit-sticky;
+position: sticky;
+top: 0;
 
 .button {
-  background-color: #4CAF50; /* Green */
   border: none;
   color: white;
   padding: 16px 32px;
