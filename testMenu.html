@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <style media="screen">
+    .item1 {
+      grid-area: header;
+    }
+
+    .item2 {
+      grid-area: menu;
+    }
+
+    .item3 {
+      grid-area: main;
+    }
+
+    .item4 {
+      grid-area: footer;
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-areas:
+        'header header header header header header'
+        'menu main main main main main'
+        'menu footer footer footer footer footer';
+      grid-gap: 10px;
+      background-color: #2196F3;
+      padding: 10px;
+    }
+
+    .grid-container>div {
+      background-color: rgba(255, 255, 255, 0.8);
+      text-align: center;
+      padding: 20px 0;
+      font-size: 30px;
+    }
+    .mainTitle{
+      font-size: 20px;
+      color: blue;
+      text-align: left;
+      margin: 0;
+      margin-left: 20px;
+      margin-right: 20px;
+    }
+    .subTitle{
+      font-size: 16px;
+      color: blue;
+      margin: 0;
+      margin-left: 40px;
+      text-align: left;
+      margin-right: 20px;
+    }
+    .oppgaveTitle{
+      font-size: 16px;
+      color: red;
+      margin: 0;
+      margin-left: 40px;
+      text-align: left;
+      margin-right: 20px;
+      font-style: italic;
+    }
+    .test1{
+      display: none;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="grid-container">
+    <div class="item1">Konseptutvikling og programmering</div>
+    <div class="item2">
+      <p class="mainTitle">1. HTML</p>
+      <p class="subTitle">Lage et dokument</p>
+      <p class="subTitle">Sette inn element</p>
+      <p class="subTitle">Tekst</p>
+      <p class="subTitle">Stilsetting</p>
+      <p class="oppgaveTitle">Mitt første nettsted</p>
+      <p class="oppgaveTitle">Halloween</p>
+      <p class="mainTitle">2. CSS</p>
+      <p class="subTitle">Forskjellige typer css</p>
+      <p class="subTitle">Oprette css filer</p>
+      <p class="subTitle">Layout</p>
+      <p class="subTitle">Grid</p>
+      <p class="subTitle">Flexbox</p>
+      <p class="mainTitle">3. PHP</p>
+      <p class="subTitle">Subtest</p>
+      <p class="mainTitle">4. JavaScript</p>
+      <p class="subTitle">Subtest</p>
+    </div>
+    <div class="item3">
+      <div class="test1">
+        test test test testtesttest test test testtesttest test test testtesttest test test testtest
+        test test test testtesttest test test testtesttest test test testtesttest test test testtest
+        test test test testtesttest test test testtesttest test test testtesttest test test testtest
+        test test test testtesttest test test testtesttest test test testtesttest test test testtest
+        test test test testtesttest test test testtesttest test test testtesttest test test testtest
+        test test test testtesttest test test testtesttest test test testtesttest test test testtest
+        test test test testtesttest test test testtesttest test test testtesttest test test testtest
+      </div>
+      <div class="test2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut metus dolor, scelerisque quis pulvinar eget, hendrerit quis massa. Aenean neque magna, tempus vel justo nec, faucibus facilisis lacus. Mauris risus lorem, iaculis quis bibendum vitae, bibendum vel metus. Nullam quis porta diam, ac mollis justo. Integer eu diam vel nibh lobortis bibendum nec eget lacus. In vitae eros ligula. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam sit amet ullamcorper massa. Aenean pulvinar neque sit amet mattis efficitur. Vivamus egestas volutpat magna ut maximus. Phasellus mattis eget nibh quis hendrerit. Sed auctor vulputate ipsum, id ornare justo. Mauris elit metus, accumsan et ligula in, suscipit laoreet ante.
+
+Vestibulum consequat ex a pulvinar congue. Sed purus eros, convallis ut consectetur sed, tempor et massa. Sed ultricies ante enim, in facilisis quam fermentum eget. Nullam sit amet commodo turpis. Quisque sit amet dui fringilla, vestibulum augue iaculis, luctus arcu. Aliquam tristique, orci id posuere dapibus, velit est accumsan sem, id varius lectus neque ut lectus. Aliquam erat volutpat.
+
+Phasellus lacinia velit lorem, a pellentesque mauris porta ac. Aenean efficitur sodales consequat. Pellentesque et elementum lorem. Nulla facilisis maximus nulla, aliquet ultrices risus auctor non. Maecenas tempus semper neque, sit amet finibus magna condimentum quis. Mauris aliquet luctus viverra. Etiam posuere ante quis lectus rutrum interdum. In malesuada velit magna, eget aliquam orci lacinia malesuada. Morbi euismod laoreet semper. Nullam justo felis, gravida vitae auctor eu, feugiat eu neque. Cras dignissim blandit metus, sit amet maximus magna porttitor eu. Morbi vulputate mauris vitae justo aliquam eleifend.
+
+Morbi dictum mi sem, eu euismod mauris pulvinar nec. Aenean mattis luctus libero in tincidunt. Mauris nisl mauris, facilisis quis enim id, dignissim faucibus nulla. Nullam metus lorem, pellentesque at justo id, laoreet egestas eros. Cras nec volutpat mauris. Sed lobortis elementum faucibus. Mauris molestie metus vel condimentum iaculis. Donec tristique fermentum quam eget blandit. Aenean sapien sapien, semper in justo vitae, tincidunt sollicitudin justo. Cras ultricies sapien eget leo condimentum, tincidunt accumsan risus rhoncus. Maecenas bibendum diam vel enim tempor, non euismod eros consequat.
+      </div>
+
+    </div>
+    <div class="item4">Footer</div>
+  </div>
+  <script type="text/javascript">
+    var testEl1 = document.querySelector(".test1");
+    var testEl2 = document.querySelector(".test2");
+
+
+    function test(){
+      testEl2.style.display = "none";
+      testEl1.style.display = "block";
+    }
+  </script>
+</body>
+
+</html>
