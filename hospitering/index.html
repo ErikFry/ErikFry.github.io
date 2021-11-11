@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="no" dir="ltr">
+  <head>
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon.ico">
+    <link rel="stylesheet" href="stil.css">
+    <meta charset="utf-8">
+    <title>Hospitering Guide</title>
+    <script type="text/javascript">
+    var bNr = 0;
+    window.onload=oppstart;
+
+    function oppstart(){
+      document.getElementById('left').style.height="0px";
+      document.getElementById('st1').style.display="block";
+      document.getElementById('left').onclick=lefty;
+      document.getElementById('right').onclick=righty;
+      document.getElementById('left').onmouseenter=lhover;
+      document.getElementById('left').onmouseleave=lhoverl;
+      document.getElementById('right').onmouseenter=rhover;
+      document.getElementById('right').onmouseleave=rhoverl;
+    }
+
+    function lhover(){
+      document.getElementById('left').style.backgroundImage="url(bilder/pilhoverL.png)";
+    }
+    function rhover(){
+      document.getElementById('right').style.backgroundImage="url(bilder/pilhover.png)";
+    }
+    function lhoverl(){
+      document.getElementById('left').style.backgroundImage="url(bilder/pilL.png)";
+    }
+    function rhoverl(){
+      document.getElementById('right').style.backgroundImage="url(bilder/pil.png)";
+    }
+
+    function lefty(){
+      if(bNr===0){
+      } else{
+        bNr--;
+        bytt(bNr);
+      }
+    }
+
+    function righty(){
+      if(bNr===14){
+      } else{
+        bNr++;
+        bytt(bNr);
+      }
+    }
+
+    function bytt(bNr){
+      if(bNr===0){
+        document.getElementById('left').style.height="0px";
+        document.getElementById('st1').style.display="block";
+        document.getElementById('st2').style.display="none";
+        document.getElementById('sNr').innerHTML="1";
+        document.getElementById('beskrivelse').innerHTML="Start med å trykke på filutforsker ikonet på oppgave linjen eller trykk på windows + E.<br>Høyreklikk på 'C' disken. trykk på ny, også trykk på mappe. Navngi denne mappen wamp.<br>Dette er hvor vi skal lagre alle filene til nettsiden vi lager.";
+      }else if(bNr===1){
+        document.getElementById('left').style.height="60px";
+        document.getElementById('st2').style.display="block";
+        document.getElementById('st1').style.display="none";
+        document.getElementById('st3').style.display="none";
+        document.getElementById('sNr').innerHTML="2";
+        document.getElementById('beskrivelse').innerHTML="Trykk på windows ikonet nederst i venstre hjørnet på oppgavebehandlingen. <br>Søk på 'notepad++' og trykk på appen som kommer opp.";
+      }else if(bNr===2){
+        document.getElementById('st3').style.display="block";
+        document.getElementById('st2').style.display="none";
+        document.getElementById('st4').style.display="none";
+        document.getElementById('sNr').innerHTML="3";
+        document.getElementById('beskrivelse').innerHTML="Kopier så teksten i bildet, det er viktig at alt skrives riktig<br>ettersom små skrivefeil kan gjøre at ting ikke fungerer på nettsiden.";
+      }else if(bNr===3){
+        document.getElementById('st4').style.display="block";
+        document.getElementById('st3').style.display="none";
+        document.getElementById('st5').style.display="none";
+        document.getElementById('sNr').innerHTML="4";
+        document.getElementById('beskrivelse').innerHTML="For å lagre det du har skrevet trykker du på Fil også Lagre som.";
+      }else if(bNr===4){
+        document.getElementById('st5').style.display="block";
+        document.getElementById('st4').style.display="none";
+        document.getElementById('st6').style.display="none";
+        document.getElementById('sNr').innerHTML="5";
+        document.getElementById('beskrivelse').innerHTML="Kall så filen moss.html, grunnen til at vi lagrer som .html er så den kan åpnes i nettleseren.<br>Du kan så gå inn på mappen og trykke på moss.html, da åpnes den i standardnettleseren din.<br>Videre nå trenger du kunn bare å holde inne CTRL+S på tastaturet.";
+      }else if(bNr===5){
+        document.getElementById('st6').style.display="block";
+        document.getElementById('st5').style.display="none";
+        document.getElementById('st7').style.display="none";
+        document.getElementById('sNr').innerHTML="6";
+        document.getElementById('beskrivelse').innerHTML="Se at alt ser likt ut";
+      }else if(bNr===6){
+        document.getElementById('st7').style.display="block";
+        document.getElementById('st6').style.display="none";
+        document.getElementById('st8').style.display="none";
+        document.getElementById('sNr').innerHTML="7";
+        document.getElementById('beskrivelse').innerHTML="Vi skal så stilsette siden litt, kopier teksten.<br>Denne koden skal ligge innenfor taggene &lthead&gt og &lt/head&gt øverst på siden.";
+      }else if(bNr===7){
+        document.getElementById('st8').style.display="block";
+        document.getElementById('st7').style.display="none";
+        document.getElementById('st9').style.display="none";
+        document.getElementById('sNr').innerHTML="8";
+        document.getElementById('beskrivelse').innerHTML="Vi skal nå gi nettsiden mer innhold i form av mer tekst og bilder, trykk på nedlastningsikonet for tekst,<br>bildene er de dere har tatt selv. Koden til å legge inn bilder og tekst ser dere på bildet.";
+      }else if(bNr===8){
+        document.getElementById('st9').style.display="block";
+        document.getElementById('st8').style.display="none";
+        document.getElementById('st10').style.display="none";
+        document.getElementById('sNr').innerHTML="9";
+        document.getElementById('beskrivelse').innerHTML="Mer stilsetting. (tips: lagre og last inn siden på nytt etter hver nye regel.)";
+      }else if(bNr===9){
+        document.getElementById('st10').style.display="block";
+        document.getElementById('st9').style.display="none";
+        document.getElementById('st11').style.display="none";
+        document.getElementById('sNr').innerHTML="10";
+        document.getElementById('beskrivelse').innerHTML="Se at alt ser bra ut og funker.";
+      }else if(bNr===10){
+        document.getElementById('st11').style.display="block";
+        document.getElementById('st10').style.display="none";
+        document.getElementById('st12').style.display="none";
+        document.getElementById('sNr').innerHTML="11";
+        document.getElementById('beskrivelse').innerHTML="Vi skal nå legge til navbar, kopier koden ovenfor og test.";
+      }else if(bNr===11){
+        document.getElementById('st12').style.display="block";
+        document.getElementById('st11').style.display="none";
+        document.getElementById('st13').style.display="none";
+        document.getElementById('sNr').innerHTML="12";
+        document.getElementById('beskrivelse').innerHTML="Vi skal så stilsette navbaren";
+      }else if(bNr===12){
+        document.getElementById('st13').style.display="block";
+        document.getElementById('st12').style.display="none";
+        document.getElementById('st14').style.display="none";
+        document.getElementById('sNr').innerHTML="13";
+        document.getElementById('beskrivelse').innerHTML="Her legger vi til link";
+      }else if(bNr===13){
+        document.getElementById('st14').style.display="block";
+        document.getElementById('st13').style.display="none";
+        document.getElementById('st15').style.display="none";
+        document.getElementById('sNr').innerHTML="14";
+        document.getElementById('beskrivelse').innerHTML="Lag et dokument med navn gamle_moss.html (likt navn som linken vi opprettet)<br>og lag en navbar i gamle_moss filen som linker til indeksen(hovedsiden).";
+        document.getElementById('right').style.height="60px";
+      }else if(bNr===14){
+        document.getElementById('st15').style.display="block";
+        document.getElementById('st14').style.display="none";
+        document.getElementById('sNr').innerHTML="15";
+        document.getElementById('beskrivelse').innerHTML="Slik blir resultatet.";
+        document.getElementById('right').style.height="0px";
+      }}
+    </script>
+  </head>
+  <body>
+    <div id="bodyv2">
+      <div id="piler">
+        <div id="left"></div>
+        <div id="sNr">1</div>
+        <div id="right"></div>
+      </div>
+      <div class="element">
+        <img src="bilder/skritt1.png" alt="step1" id="st1">
+        <img src="bilder/skritt2.png" alt="step2" id="st2">
+        <img src="bilder/skritt3.png" alt="step3" id="st3">
+        <img src="bilder/skritt4.png" alt="step4" id="st4">
+        <img src="bilder/skritt5.png" alt="step5" id="st5">
+        <img src="bilder/skritt6.png" alt="step6" id="st6">
+        <img src="bilder/skritt7.png" alt="step7" id="st7">
+        <img src="bilder/skritt8.png" alt="step8" id="st8">
+        <img src="bilder/skritt9.png" alt="step9" id="st9">
+        <img src="bilder/skritt10.png" alt="step10" id="st10">
+        <img src="bilder/skritt11.png" alt="step11" id="st11">
+        <img src="bilder/skritt12.png" alt="step12" id="st12">
+        <img src="bilder/skritt13.png" alt="step13" id="st13">
+        <img src="bilder/skritt14.png" alt="step14" id="st14">
+        <img src="bilder/skritt15.png" alt="step15" id="st15">
+      </div>
+      <div id="beskrivelse">
+        Start med å trykke på filutforsker ikonet på oppgave linjen eller trykk på windows + E.<br>Høyreklikk på 'C' disken. trykk på ny, også trykk på mappe. Navngi denne mappen wamp.<br>Dette er hvor vi skal lagre alle filene til nettsiden vi lager.
+      </div>
+    </div>
+  </body>
+  <script type="text/javascript">
+  function arrowSwitch(e){
+    if(e.keyCode === 39){
+      righty();
+    } else if(e.keyCode=== 37){
+      lefty();
+    }
+  }
+  document.onkeydown = arrowSwitch;
+  </script>
+</html>
